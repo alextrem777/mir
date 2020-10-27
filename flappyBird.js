@@ -38,7 +38,7 @@ scor.src = "sounds/score.mp3";
 
 // on key down
 
-document.addEventListener('click', moveUp);
+document.addEventListener('click', moveUp, false);
 
 
 
