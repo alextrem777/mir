@@ -2,14 +2,41 @@
 <html>
   <head>
     <title>Happy MILK 2.0</title>
- <link rel="stylesheet" href="./styles.css"> 
+     <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        canvas {
+            background-color: #ccc;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+ 
   </head>
   <body>
    <h3>Веселый МИР</h3>
    
    <canvas id="canvas" width="288" height="512">
     </canvas>
-   
+   <script>
+        var canvas = document.getElementById('canvas');
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+            ctx.fillRect(25,25,100,100);
+            ctx.clearRect(45,45,60,60);
+            ctx.strokeRect(50,50,50,50);
+        }
+    </script>
    <script src="flappyBird.js"></script>
   </body>
 </html>
