@@ -38,7 +38,7 @@ scor.src = "sounds/score.mp3";
 
 // on key down
 
-document.addEventListener("keydown.backspace",moveUp);
+document.addEventListener("keyup",moveUp);
 
 function moveUp(){
     bY -= 40;
