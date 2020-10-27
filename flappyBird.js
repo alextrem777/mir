@@ -18,13 +18,13 @@ pipeSouth.src = "images/pipeSouth.png";
 
 // some variables
 
-var gap = 140;
+var gap = 170;
 var constant;
 
 var bX = 10;
 var bY = 150;
 
-var gravity = 1.9;
+var gravity = 2.1;
 
 var score = 0;
 
@@ -43,7 +43,7 @@ document.addEventListener('touchend', moveUp,false);
 
 
 function moveUp(){
-    bY -= 40;
+    bY -= 50;
     fly.play();
 }
 
