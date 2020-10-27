@@ -38,7 +38,7 @@ scor.src = "sounds/score.mp3";
 
 // on key down
 
-document.addEventListener("keypress",moveUp);
+document.addEventListener("input",moveUp);
 
 function moveUp(){
     bY -= 40;
